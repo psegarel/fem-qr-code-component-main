@@ -19,7 +19,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-[Screenshot](./images/screenshot.png)
+![My solution screenshot](./images/screenshot.png)
 
 ### Links
 
