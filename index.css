@@ -13,6 +13,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 body {
   background-color: hsl(212, 45%, 89%);
 }
@@ -52,6 +53,7 @@ p {
 
 h1 {
   color: hsl(218, 44%, 22%);
+  font-weight: 700;
 }
 p {
   color: hsl(216, 15%, 48%);
@@ -64,4 +66,15 @@ p {
   justify-content: center;
   gap: 2em;
   padding: 1em 0;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 428px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }
