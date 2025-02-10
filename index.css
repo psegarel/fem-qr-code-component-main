@@ -1,9 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Liter:wght@100..900&display=swap");
 
 .outfit-regular {
   font-family: "Outfit", serif;
   font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
+}
+.liter-regular {
+  font-family: "Liter", serif;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -35,12 +41,19 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  gap: 5em;
+}
+.qr-container {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   background: white;
   margin: auto;
   padding: 1em;
   border-radius: 15px;
+  /* filter: drop-shadow(5px 5px rgba(0, 0, 0, 0.1)); */
+  filter: drop-shadow(5px 15px 20px rgba(0, 0, 0, 0.1));
 }
 
 h1,
@@ -53,7 +66,7 @@ p {
 
 h1 {
   color: hsl(218, 44%, 22%);
-  font-weight: 700;
+  font-size: 1.4rem;
 }
 p {
   color: hsl(216, 15%, 48%);
@@ -64,8 +77,11 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1.2em;
   padding: 1em 0;
+}
+img {
+  border-radius: 15px;
 }
 
 /* Mobile styles */
@@ -76,5 +92,8 @@ p {
 
   p {
     font-size: 0.9rem;
+  }
+  .qr-container {
+    max-width: 300px;
   }
 }
